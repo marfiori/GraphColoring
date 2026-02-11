@@ -5,7 +5,7 @@ from graph_coloring.graph_generator import *
 
 import networkx as nx
 
-from utilities.counters import Timer
+from mdp.utilities.counters import Timer
 from time import sleep
 from graph_coloring.data_handler import *
 import pandas as pd
@@ -21,7 +21,7 @@ def rollout():
     all_instances = pd.read_csv('data/DimacsInstances/index.csv')
     #
     instance = 'mulsol.i.5.col'
-    # graph = graph_from_dimacs('data/DimacsInstances/Instances', instance)
+    # graph = graph_from_dimacs('data/DimacsInstances/instances', instance)
     graph = nx.generators.random_graphs.erdos_renyi_graph(10, 0.2, seed=754)
 
     # print(f'Graph {instance} with {len(g)} nodes, and {len(g.edges)} edges')
@@ -50,7 +50,7 @@ def rollout_lb():
     # all_instances = pd.read_csv('data/DimacsInstances/index.csv')
     #
     # instance = 'mulsol.i.5.col'
-    # graph = graph_from_dimacs('data/DimacsInstances/Instances', instance)
+    # graph = graph_from_dimacs('data/DimacsInstances/instances', instance)
     # graph = nx.generators.random_graphs.erdos_renyi_graph(10, 0.2, seed=754)
     np.random.seed(754)
     size = 100

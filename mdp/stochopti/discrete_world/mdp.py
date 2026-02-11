@@ -3,8 +3,8 @@ import numpy as np
 import torch as pt
 import logging
 
-from stochopti.discrete_world.policies import Policy, DMSPolicy, DMNSPolicy, RMSPolicy
-from stochopti.discrete_world.space import finiteTimeSpace
+from .policies import Policy, DMSPolicy, DMNSPolicy, RMSPolicy
+from .space import finiteTimeSpace
 from utilities.counters import Timer, TallyCounter
 from utilities.utilities import check_kwargs
 

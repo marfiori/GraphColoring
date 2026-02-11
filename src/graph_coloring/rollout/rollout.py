@@ -7,7 +7,7 @@ import logging
 
 import matplotlib.pyplot as plt
 
-from utilities.counters import TallyCounter, Timer
+from mdp.utilities.counters import TallyCounter, Timer
 
 logging.basicConfig(level=logging.DEBUG)
 

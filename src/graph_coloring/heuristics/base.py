@@ -4,7 +4,7 @@ from graph_coloring.dynamics.base_class import Coloring
 from abc import ABC, abstractmethod
 from typing import Optional
 
-from utilities.counters import Timer
+from mdp.utilities.counters import Timer
 
 
 class FunctionApproximation(ABC):

@@ -7,7 +7,7 @@ from itertools import product
 import networkx as nx
 from scipy.sparse import csr_matrix, diags, lil_matrix
 
-from stochopti.discrete_world import space
+from mdp.stochopti.discrete_world import space
 from gym import Space, Env
 from gym.spaces import Discrete
 import numpy as np

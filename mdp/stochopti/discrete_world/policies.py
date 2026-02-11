@@ -1,6 +1,6 @@
 from abc import abstractmethod
 from treelib import Node, Tree
-from stochopti.discrete_world.space import finiteTimeSpace
+from .space import finiteTimeSpace
 import torch as pt
 import numpy as np
 import scipy.sparse as sp
